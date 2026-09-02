@@ -384,6 +384,8 @@ body {
 .slider_section .detail-box {
   position: relative;
   z-index: 4;
+
+  
 }
 
 
@@ -391,19 +393,24 @@ body {
    TITLE
 ========================================= */
 
+/* OUTLINE PUTIH PADA JUDUL SLIDER */
 .slider_section .detail-box h1 {
-  font-size: 4.5rem;
-  font-weight: bold;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 70px;
 
-  margin-bottom: 15px;
+    color: #ffce51 !important;
 
-  color: #ffce51;
-
-  line-height: 70px;
+    -webkit-text-stroke: 3px rgb(254, 248, 248) !important;
+    paint-order: stroke fill;
 }
 
 .slider_section .detail-box h1 span {
-  color: #cd0909;
+    color: #cd0909 !important;
+
+    -webkit-text-stroke: 3px rgb(254, 250, 250) !important;
+    paint-order: stroke fill;
 }
 
 
@@ -1053,6 +1060,57 @@ body {
   color: #b57a45;
 }
 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.package-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.package-table th,
+.package-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.package-table th {
+    background-color: #cd0909;
+    color: #fff;
+}
+
+/* =========================
+   RESPONSIVE TABLE
+   ========================= */
+
+@media (max-width: 767px) {
+
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        padding: 0 5px;
+    }
+
+    .package-table {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .package-table th,
+    .package-table td {
+        padding: 12px 8px;
+    }
+}
 
 /* ==============================
    SCROLL POSITION
@@ -1257,59 +1315,69 @@ body {
 ========================================= */
 
 .arrival_section {
-  background-color: #d4ced0;
+    background-color: #d4ced0;
 }
 
 .arrival_section .box {
-  position: relative;
-  min-height: 450px;
-  padding: 80px 45px;
-  overflow: hidden;
+    position: relative;
+    min-height: 450px;
+    padding: 80px 45px;
+    overflow: hidden;
 }
 
-
 /* =========================================
-   GAMBAR
+   GAMBAR - DESKTOP
 ========================================= */
 
 .arrival_section .arrival_bg_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+    z-index: 1;
 }
 
 .arrival_section .arrival_bg_box img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center;
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    /* SELURUH FOTO TERLIHAT */
+    object-fit: contain;
+    object-position: center;
 }
 
 
 /* =========================================
-   KONTEN
+   KONTEN - DESKTOP
 ========================================= */
 
-.arrival_section .row {
-  position: relative;
-  z-index: 2;
+.arrival_section .box .row {
+    position: relative;
+    z-index: 2;
+}
+
+.arrival_section .box .row .col-md-6 {
+    position: relative;
+    z-index: 3;
 }
 
 .arrival_section .heading_container {
-  color: #002c3e;
-  margin-bottom: 10px;
+    color: #002c3e;
+    margin-bottom: 10px;
 }
 
 .arrival_section .heading_container h2 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .arrival_section .box p {
-  line-height: 1.7;
+    line-height: 1.7;
 }
 
 
@@ -1318,18 +1386,18 @@ body {
 ========================================= */
 
 .arrival_section a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
-  color: #ffffff;
-  border-radius: 0;
-  transition: all 0.3s;
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #f7444e;
+    border: 1px solid #f7444e;
+    color: #ffffff;
+    border-radius: 0;
+    transition: all 0.3s;
 }
 
 .arrival_section a:hover {
-  background-color: transparent;
-  color: #f7444e;
+    background-color: transparent;
+    color: #f7444e;
 }
 
 
@@ -1338,102 +1406,145 @@ body {
 ========================================= */
 
 @media (max-width: 991px) {
-  .arrival_section .box {
-    min-height: 400px;
-    padding: 60px 30px;
-  }
 
-  .arrival_section .heading_container h2 {
-    font-size: 2.5rem;
-  }
+    .arrival_section .box {
+        min-height: 400px;
+        padding: 60px 30px;
+    }
 
+    .arrival_section .heading_container h2 {
+        font-size: 2.5rem;
+    }
 }
 
 
 /* =========================================
-   HP
+   MOBILE
+   FOTO DI ATAS
+   KONTEN DI BAWAH
 ========================================= */
 
 @media (max-width: 767px) {
 
-  .arrival_section {
-    padding: 0;
-  }
+    .arrival_section {
+        padding: 0;
+    }
 
-  .arrival_section .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+    .arrival_section .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
-  .arrival_section .box {
-    /* TIDAK LAGI membagi gambar & tulisan */
-    min-height: auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: #ffffff;
-  }
+    /* BOX MENJADI VERTIKAL */
+    .arrival_section .box {
+        min-height: auto;
+        width: 100%;
 
+        padding: 0;
 
-  /* ==============================
-       GAMBAR DI ATAS
-    ============================== */
-  .arrival_section .arrival_bg_box {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    height: 300px;
-    z-index: 1;
-  }
+        display: flex;
+        flex-direction: column;
 
-  .arrival_section .arrival_bg_box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+        overflow: hidden;
+
+        background-color: #ffffff;
+    }
 
 
-  /* ==============================
-       TEKS DI BAWAH
-    ============================== */
-  .arrival_section .row {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    z-index: 2;
-  }
+    /* =====================================
+       FOTO DI ATAS
+    ===================================== */
 
-  .arrival_section .row>div {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-  }
+    .arrival_section .arrival_bg_box {
+        position: relative;
 
-  .arrival_section .col-md-6 {
-    padding: 35px 25px 40px;
-  }
+        top: auto;
+        left: auto;
 
-  .arrival_section .heading_container {
-    margin-bottom: 15px;
-    align-items: flex-start;
-  }
+        width: 100%;
+        height: auto;
 
-  .arrival_section .heading_container h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 0;
-  }
+        overflow: hidden;
+
+        z-index: 1;
+    }
+
+    .arrival_section .arrival_bg_box img {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        /*
+         * JANGAN pakai cover,
+         * supaya foto tidak terpotong/zoom
+         */
+        object-fit: contain;
+        object-position: center;
+    }
 
 
-  .arrival_section .box p {
-    margin-top: 15px !important;
-    margin-bottom: 20px !important;
-    font-size: 14px;
-    line-height: 1.7;
-  }
+    /* =====================================
+       KONTEN DI BAWAH FOTO
+    ===================================== */
+
+    .arrival_section .box .row {
+        position: relative;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: block;
+
+        z-index: 2;
+    }
+
+    .arrival_section .box .row > div {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        padding: 30px 25px 35px;
+    }
+
+
+    /* =====================================
+       JUDUL
+    ===================================== */
+
+    .arrival_section .heading_container {
+        margin-bottom: 15px;
+
+        align-items: flex-start;
+    }
+
+    .arrival_section .heading_container h2 {
+        font-size: 2rem;
+
+        line-height: 1.2;
+
+        margin-bottom: 0;
+    }
+
+
+    /* =====================================
+       DESKRIPSI
+    ===================================== */
+
+    .arrival_section .box p {
+        margin-top: 15px !important;
+        margin-bottom: 20px !important;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
 
 
@@ -1443,25 +1554,31 @@ body {
 
 @media (max-width: 576px) {
 
-  .arrival_section .arrival_bg_box {
-    height: 250px;
-  }
+    .arrival_section .arrival_bg_box {
+        width: 100%;
+        height: auto;
+    }
 
-  .arrival_section .col-md-6 {
-    padding: 30px 20px 35px;
-  }
+    .arrival_section .arrival_bg_box img {
+        width: 100%;
+        height: auto;
 
-  .arrival_section .heading_container h2 {
-    font-size: 1.8rem;
-  }
+        object-fit: contain;
+    }
 
-  .arrival_section .box p {
-    font-size: 14px;
-    line-height: 1.65;
-  }
+    .arrival_section .box .row > div {
+        padding: 25px 20px 30px;
+    }
 
+    .arrival_section .heading_container h2 {
+        font-size: 1.8rem;
+    }
+
+    .arrival_section .box p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
 }
-
 .why_section .box {
   text-align: center;
   margin-top: 45px;
