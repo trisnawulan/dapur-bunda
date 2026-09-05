@@ -2434,6 +2434,20 @@ body {
   color: inherit;
 }
 
+.information_f p a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.information_f p a:hover {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.information_f p a:visited {
+    color: #000000 !important;
+}
+
 /*# sourceMappingURL=style.css.map */
 
 .heading_container.heading_center h3 {
