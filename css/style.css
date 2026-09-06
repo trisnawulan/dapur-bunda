@@ -971,25 +971,24 @@ body {
 /* Tombol Selengkapnya */
 
 .btn-detail {
-  background-color: #1b623a;
+  background-color: #f9b22e;
   color: #fff;
 }
 
 .btn-detail:hover {
-  background-color: #154d2e;
+  background-color: #a97a20;
   color: #fff;
 }
-
 
 /* Tombol Beli Sekarang */
 
 .btn-buy {
-  background-color: #cd0909;
+  background-color: #1b623a;
   color: #fff;
 }
 
 .btn-buy:hover {
-  background-color: #a80707;
+  background-color: #154d2e;
   color: #fff;
 }
 
