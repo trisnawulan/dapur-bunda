@@ -119,7 +119,7 @@
             <img id="heroImage" src="images/2.png" alt="Dapur Bunda Catering">
          </div>
          <!-- CONTENT CAROUSEL -->
-         <div id="customCarousel1" class="carousel slide">
+         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
             <!-- SLIDE 1 -->
             <div class="carousel-item active">
                <div class="container">
@@ -644,6 +644,33 @@
 
          }, 2000);
       </script>
+
+      <script>
+   const carousel = document.getElementById('customCarousel1');
+
+   let startX = 0;
+   let endX = 0;
+
+   carousel.addEventListener('touchstart', function (e) {
+      startX = e.touches[0].clientX;
+   });
+
+   carousel.addEventListener('touchend', function (e) {
+      endX = e.changedTouches[0].clientX;
+
+      const distance = endX - startX;
+
+      // Geser ke kiri = slide berikutnya
+      if (distance < -50) {
+         $('#customCarousel1').carousel('next');
+      }
+
+      // Geser ke kanan = slide sebelumnya
+      if (distance > 50) {
+         $('#customCarousel1').carousel('prev');
+      }
+   });
+</script>
 </body>
 
 </html>
