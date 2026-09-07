@@ -19,7 +19,7 @@
    <link href="css/font-awesome.min.css" rel="stylesheet" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
    <!-- Custom styles for this template -->
-   <link href="css/style.css" rel="stylesheet"> />
+   <link href="css/style.css" rel="stylesheet" />
    <!-- responsive style -->
    <link href="css/responsive.css" rel="stylesheet" />
 </head>
@@ -111,6 +111,8 @@
             </nav>
          </div>
       </header>
+      <!-- end header section -->
+
 
       <!-- slider section -->
       <section class="slider_section">
@@ -181,7 +183,6 @@
                </div>
             </div>
 
-
             <!-- SLIDE 3 -->
             <div class="carousel-item">
                <div class="container">
@@ -211,7 +212,6 @@
                </div>
             </div>
 
-
             <!-- DOT INDICATOR -->
             <ol class="carousel-indicators">
                <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
@@ -220,9 +220,10 @@
             </ol>
          </div>
       </section>
+      <!-- end slider section -->
 
 
-      <!-- why section -->
+      <!-- info section -->
       <section class="why_section layout_padding">
          <div class="container">
 
@@ -243,16 +244,13 @@
                <!-- CARD 1 -->
                <div class="col-md-4 mb-4">
                   <div class="about_card">
-
                      <div class="about_icon">
                         <i class="fa fa-cutlery" aria-hidden="true"></i>
                      </div>
-
                      <div class="about_content">
                         <h5>
                            Cita Rasa Rumahan
                         </h5>
-
                         <p>
                            Hidangan dibuat dengan cita rasa khas masakan rumah
                            yang lezat dan cocok dinikmati bersama keluarga.
@@ -262,11 +260,9 @@
                   </div>
                </div>
 
-
                <!-- CARD 2 -->
                <div class="col-md-4 mb-4">
                   <div class="about_card">
-
                      <div class="about_icon">
                         <i class="fa fa-heart" aria-hidden="true"></i>
                      </div>
@@ -281,7 +277,6 @@
                      </div>
                   </div>
                </div>
-
 
                <!-- CARD 3 -->
                <div class="col-md-4 mb-4">
@@ -303,9 +298,10 @@
             </div>
          </div>
       </section>
-      <!-- end why section -->
+      <!-- end info section -->
 
-      <!-- arrival section -->
+
+      <!-- sertif section -->
       <section class="arrival_section">
          <div class="container">
             <div class="box">
@@ -328,9 +324,10 @@
             </div>
          </div>
       </section>
-      <!-- end arrival section -->
+      <!-- end sertif section -->
 
-      <!-- product section -->
+
+      <!-- paket layanan section -->
       <section class="product_section layout_padding" id="paketlayanan">
          <div class="container">
             <div class="heading_container heading_center">
@@ -474,54 +471,10 @@
                      </div>
                   </div>
                </div>
-
-               <!-- CARD 7 -->
-               <!-- <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="package-card">
-                     <div class="package-image">
-                        <img src="images/paket7.jpg" alt="Paket 7">
-                     </div>
-                     <div class="package-content">
-                        <h4>Paket 7</h4>
-                        <p>Pilihan menu lengkap dengan harga yang terjangkau.</p>
-                        <div class="package-buttons">
-                           <a href="produk7.html" class="btn-detail">
-                              Manu
-                           </a>
-                           <a href="https://wa.me/6285225580229?text=Halo%20Dapur%20Bunda%20Catering%2C%20saya%20mau%20pesan%20Paket%207"
-                              class="btn-buy" target="_blank">
-                              Pesan
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div> -->
-
-               <!-- CARD 8 -->
-               <!-- <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="package-card">
-                     <div class="package-image">
-                        <img src="images/paket8.jpg" alt="Paket 8">
-                     </div>
-                     <div class="package-content">
-                        <h4>Paket 8</h4>
-                        <p>Paket catering untuk melengkapi kebutuhan acara Anda.</p>
-                        <div class="package-buttons">
-                           <a href="produk8.html" class="btn-detail">
-                              Manu
-                           </a>
-                           <a href="https://wa.me/6285225580229?text=Halo%20Dapur%20Bunda%20Catering%2C%20saya%20mau%20pesan%20Paket%208"
-                              class="btn-buy" target="_blank">
-                              Pesan
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div> -->
             </div>
          </div>
       </section>
-      <!-- end product section -->
+      <!-- end paket layanan section -->
 
       <!-- footer start -->
       <footer>
@@ -535,8 +488,7 @@
                      <div class="information_f">
                         <p>
                            <strong>Alamat:</strong>
-                           <a href="https://maps.app.goo.gl/3rMXgGsV6CKxRx159"
-                              target="_blank">
+                           <a href="https://maps.app.goo.gl/3rMXgGsV6CKxRx159" target="_blank">
                               Gedongan RT 02 RW 06, Desa Blondo, Kecamatan Mungkid, Kabupaten Magelang, Provinsi Jawa
                               Tengah, Indonesia
                            </a>
@@ -646,31 +598,31 @@
       </script>
 
       <script>
-   const carousel = document.getElementById('customCarousel1');
+         const carousel = document.getElementById('customCarousel1');
 
-   let startX = 0;
-   let endX = 0;
+         let startX = 0;
+         let endX = 0;
 
-   carousel.addEventListener('touchstart', function (e) {
-      startX = e.touches[0].clientX;
-   });
+         carousel.addEventListener('touchstart', function (e) {
+            startX = e.touches[0].clientX;
+         });
 
-   carousel.addEventListener('touchend', function (e) {
-      endX = e.changedTouches[0].clientX;
+         carousel.addEventListener('touchend', function (e) {
+            endX = e.changedTouches[0].clientX;
 
-      const distance = endX - startX;
+            const distance = endX - startX;
 
-      // Geser ke kiri = slide berikutnya
-      if (distance < -50) {
-         $('#customCarousel1').carousel('next');
-      }
+            // Geser ke kiri = slide berikutnya
+            if (distance < -50) {
+               $('#customCarousel1').carousel('next');
+            }
 
-      // Geser ke kanan = slide sebelumnya
-      if (distance > 50) {
-         $('#customCarousel1').carousel('prev');
-      }
-   });
-</script>
+            // Geser ke kanan = slide sebelumnya
+            if (distance > 50) {
+               $('#customCarousel1').carousel('prev');
+            }
+         });
+      </script>
 </body>
 
 </html>

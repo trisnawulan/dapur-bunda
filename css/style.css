@@ -7,6 +7,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #0c0c0c;
+  padding-top: 90px;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -86,7 +87,6 @@ h2 {
   text-align: center;
 }
 
-
 a,
 a:hover,
 a:focus {
@@ -141,11 +141,6 @@ a:focus {
   padding-left: 25px;
 }
 
-body {
-  padding-top: 90px;
-  /* sesuaikan sama tinggi header kamu */
-}
-
 .navbar-brand img {
   max-width: 280px;
   /* atur sesuai selera, ini contoh ukuran wajar */
@@ -157,7 +152,6 @@ body {
 .navbar-brand {
   font-family: 'Playfair Display', serif;
 }
-
 
 .navbar-brand span {
   font-weight: bold;
@@ -231,10 +225,9 @@ body {
   height: 4px;
   background-color: #000000;
   margin: 7px 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   position: relative;
   border-radius: 5px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -280,20 +273,18 @@ body {
 
 /*end header section*/
 
+
 /* =========================================
    SLIDER SECTION
 ========================================= */
 
 .slider_section {
   position: relative;
-  width: 100%;
-  min-height: 650px;
-
   display: flex;
   align-items: center;
-
-  padding: 90px 0 75px 0;
-
+  width: 100%;
+  min-height: 650px;
+  padding: 90px 0 75px;
   overflow: hidden;
 }
 
@@ -304,31 +295,22 @@ body {
 
 .slider_section .slider_bg_box {
   position: absolute;
-
   top: 0;
   left: 0;
-
+  z-index: 0;
   width: 100%;
   height: 100%;
-
   overflow: hidden;
-
-  z-index: 0;
 }
 
 .slider_section .slider_bg_box img {
   position: absolute;
-
   top: 0;
   left: 0;
-
+  display: block;
   width: 100%;
   height: 100%;
-
   max-width: none;
-
-  display: block;
-
   object-fit: cover;
   object-position: top right;
 }
@@ -340,22 +322,14 @@ body {
 
 .slider_section #customCarousel1 {
   position: relative;
-
+  z-index: 2;
   width: 100%;
   min-height: 485px;
-
-  z-index: 2;
 }
-
-
-/* =========================================
-   CAROUSEL ITEM
-========================================= */
 
 .slider_section .carousel-item {
   min-height: 485px;
 }
-
 
 /* =========================================
    CONTAINER
@@ -365,7 +339,6 @@ body {
   position: relative;
   z-index: 3;
 }
-
 
 /* =========================================
    ROW
@@ -384,8 +357,6 @@ body {
 .slider_section .detail-box {
   position: relative;
   z-index: 4;
-
-  
 }
 
 
@@ -393,24 +364,20 @@ body {
    TITLE
 ========================================= */
 
-/* OUTLINE PUTIH PADA JUDUL SLIDER */
 .slider_section .detail-box h1 {
-    font-size: 4.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    line-height: 70px;
-
-    color: #ffce51 !important;
-
-    -webkit-text-stroke: 3px rgb(254, 248, 248) !important;
-    paint-order: stroke fill;
+  margin-bottom: 15px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 70px;
+  color: #ffce51 !important;
+  -webkit-text-stroke: 3px rgb(254, 248, 248) !important;
+  paint-order: stroke fill;
 }
 
 .slider_section .detail-box h1 span {
-    color: #cd0909 !important;
-
-    -webkit-text-stroke: 3px rgb(254, 250, 250) !important;
-    paint-order: stroke fill;
+  color: #cd0909 !important;
+  -webkit-text-stroke: 3px rgb(254, 250, 250) !important;
+  paint-order: stroke fill;
 }
 
 
@@ -419,11 +386,9 @@ body {
 ========================================= */
 
 .slider_section .detail-box p {
-  font-size: 16px;
-
   margin-top: 20px;
   margin-bottom: 1.5rem;
-
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -438,22 +403,14 @@ body {
 
 .slider_section .detail-box .btn-box a {
   display: inline-block;
-
   padding: 12px 45px;
-
   background-color: #1b623a;
-
   border: 1px solid #1b623a;
-
-  color: #ffffff;
-
   border-radius: 0;
-
-  transition: all 0.3s;
-
+  color: #ffffff;
   font-weight: 700;
-
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .slider_section .detail-box .btn-box a:hover {
@@ -468,60 +425,47 @@ body {
 
 .slider_section #customCarousel1 .carousel-indicators {
   position: absolute !important;
-
   top: 400px !important;
-  bottom: auto !important;
-
   left: calc((100% - 1140px) / 2) !important;
   right: auto !important;
-
+  bottom: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
   width: auto !important;
-
   margin: 0 !important;
   padding: 0 !important;
-
-  display: flex !important;
-
-  justify-content: flex-start !important;
-  align-items: center !important;
-
   z-index: 20 !important;
 }
 
 .slider_section #customCarousel1 .carousel-indicators li {
   width: 12px !important;
   height: 12px !important;
-
   margin: 0 8px 0 0 !important;
-
   padding: 0 !important;
-
   background-color: #ffffff;
-
   border-radius: 50%;
-
   opacity: 1 !important;
-
   cursor: pointer;
 }
 
 .slider_section #customCarousel1 .carousel-indicators li.active {
   width: 20px !important;
   height: 20px !important;
-
   background-color: #cd0909;
 }
 
 
 /* =========================================
    TABLET
+   MAX WIDTH: 1199px
 ========================================= */
 
 @media (max-width: 1199px) {
 
   .slider_section #customCarousel1 .carousel-indicators {
-    left: calc((100% - 960px) / 2 + 15px) !important;
     top: 400px !important;
+    left: calc((100% - 960px) / 2 + 15px) !important;
   }
 
 }
@@ -529,16 +473,18 @@ body {
 
 /* =========================================
    TABLET KECIL
+   MAX WIDTH: 991px
 ========================================= */
 
 @media (max-width: 991px) {
 
+  /* Section */
   .slider_section {
     min-height: 600px;
-
-    padding: 80px 0 70px 0;
+    padding: 80px 0 70px;
   }
 
+  /* Carousel */
   .slider_section #customCarousel1 {
     min-height: 450px;
   }
@@ -547,14 +493,16 @@ body {
     min-height: 450px;
   }
 
+  /* Judul */
   .slider_section .detail-box h1 {
     font-size: 3.5rem;
     line-height: 55px;
   }
 
+  /* Indicator */
   .slider_section #customCarousel1 .carousel-indicators {
-    left: 15px !important;
     top: 380px !important;
+    left: 15px !important;
   }
 
 }
@@ -562,170 +510,137 @@ body {
 
 /* =========================================
    MOBILE
-   GAMBAR ATAS
-   KONTEN BAWAH
+   MAX WIDTH: 767px
+
+   Gambar di atas
+   Konten di bawah
 ========================================= */
 
 @media (max-width: 767px) {
 
   /* =====================================
-       SECTION
-    ===================================== */
+     SECTION
+  ===================================== */
 
   .slider_section {
     position: relative !important;
-
     display: block !important;
-
     width: 100% !important;
-
     min-height: auto !important;
     height: auto !important;
-
     padding: 0 !important;
-
     overflow: visible !important;
-
     background-color: #ffffff;
   }
 
 
   /* =====================================
-       GAMBAR
-       TIDAK LAGI ABSOLUTE
-    ===================================== */
+     GAMBAR
+     Tidak lagi absolute
+  ===================================== */
 
   .slider_section .slider_bg_box {
     position: relative !important;
-
     top: auto !important;
     left: auto !important;
-
     width: 100% !important;
     height: 300px !important;
-
     overflow: hidden !important;
-
     z-index: 1 !important;
   }
 
-
   .slider_section .slider_bg_box img {
     position: relative !important;
-
     top: auto !important;
     left: auto !important;
-
     display: block !important;
-
     width: 100% !important;
     height: 100% !important;
-
     max-width: none !important;
-
     object-fit: cover !important;
     object-position: center !important;
   }
 
 
   /* =====================================
-       CAROUSEL
-    ===================================== */
+     CAROUSEL
+  ===================================== */
 
   .slider_section #customCarousel1 {
     position: relative !important;
-
     width: 100% !important;
-
     min-height: auto !important;
     height: auto !important;
-
     z-index: 2 !important;
   }
 
 
   /* =====================================
-       SLIDE
-    ===================================== */
+     SLIDE
+  ===================================== */
 
   .slider_section .carousel-item {
     position: relative !important;
-
     min-height: auto !important;
     height: auto !important;
-
     padding: 35px 0 75px !important;
   }
 
 
   /* =====================================
-       CONTAINER
-    ===================================== */
+     CONTAINER
+  ===================================== */
 
   .slider_section .container {
     position: relative !important;
-
     width: 100% !important;
     max-width: 100% !important;
-
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-
     margin: 0 !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
   }
 
 
   /* =====================================
-       ROW
-    ===================================== */
+     ROW
+  ===================================== */
 
   .slider_section .row {
     display: block !important;
-
     width: 100% !important;
-
     margin: 0 !important;
   }
-
 
   .slider_section .row>[class*="col-"] {
     width: 100% !important;
     max-width: 100% !important;
-
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-
     margin: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 
 
   /* =====================================
-       CONTENT
-    ===================================== */
+     CONTENT
+  ===================================== */
 
   .slider_section .detail-box {
     position: relative !important;
-
     width: 100% !important;
-
     padding: 0 !important;
-
     text-align: left;
   }
 
 
   /* =====================================
-       JUDUL
-    ===================================== */
+     JUDUL
+  ===================================== */
 
   .slider_section .detail-box h1 {
-    font-size: 2.5rem !important;
-
-    line-height: 1.15 !important;
-
     margin-top: 0 !important;
     margin-bottom: 15px !important;
-
+    font-size: 2.5rem !important;
+    line-height: 1.15 !important;
     color: #ffce51;
   }
 
@@ -735,24 +650,21 @@ body {
 
 
   /* =====================================
-       DESKRIPSI
-    ===================================== */
+     DESKRIPSI
+  ===================================== */
 
   .slider_section .detail-box p {
-    font-size: 14px !important;
-
-    line-height: 1.7 !important;
-
     margin-top: 15px !important;
     margin-bottom: 20px !important;
-
+    font-size: 14px !important;
+    line-height: 1.7 !important;
     color: #333333;
   }
 
 
   /* =====================================
-    BUTTON
-    ===================================== */
+     BUTTON
+  ===================================== */
 
   .slider_section .detail-box .btn-box {
     margin-top: 15px !important;
@@ -760,26 +672,25 @@ body {
 
   .slider_section .detail-box .btn-box a {
     display: inline-block !important;
-
     padding: 11px 30px !important;
-
     font-size: 14px;
   }
 
 
   /* =====================================
-    DOT DI BAWAH KONTEN
-    ===================================== */
+     CAROUSEL DOT
+  ===================================== */
 
-  /* POSISI DOT SLIDER */
   .slider_section #customCarousel1 .carousel-indicators {
+    position: absolute !important;
     top: 85% !important;
-    bottom: auto !important;
     left: 20px !important;
     right: auto !important;
-    transform: none !important;
+    bottom: auto !important;
+    display: flex !important;
     margin: 0 !important;
     padding: 0 !important;
+    transform: none !important;
     z-index: 9999 !important;
   }
 
@@ -792,47 +703,57 @@ body {
     opacity: 1 !important;
   }
 
-
   .slider_section #customCarousel1 .carousel-indicators li.active {
     width: 18px !important;
     height: 18px !important;
     background-color: #cd0909;
   }
 
-
 }
 
 
 /* =========================================
    HP KECIL
+   MAX WIDTH: 576px
 ========================================= */
 
 @media (max-width: 576px) {
 
+  /* Gambar */
   .slider_section .slider_bg_box {
     width: 100% !important;
     height: 240px !important;
   }
 
+
+  /* Slide */
   .slider_section .carousel-item {
     padding: 30px 0 75px !important;
   }
 
+
+  /* Container */
   .slider_section .container {
-    padding-left: 20px !important;
     padding-right: 20px !important;
+    padding-left: 20px !important;
   }
 
+
+  /* Judul */
   .slider_section .detail-box h1 {
     font-size: 2.2rem !important;
     line-height: 1.15 !important;
   }
 
+
+  /* Deskripsi */
   .slider_section .detail-box p {
     font-size: 13px !important;
     line-height: 1.7 !important;
   }
 
+
+  /* Indicator */
   .slider_section #customCarousel1 .carousel-indicators {
     left: 20px !important;
     bottom: 20px !important;
@@ -969,7 +890,6 @@ body {
 
 
 /* Tombol Selengkapnya */
-
 .btn-detail {
   background-color: #f9b22e;
   color: #fff;
@@ -1060,30 +980,30 @@ body {
 }
 
 .table-responsive {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .package-table {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background: #fff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .package-table th,
 .package-table td {
-    padding: 15px 20px;
-    text-align: center;
-    border: 1px solid #ddd;
+  padding: 15px 20px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
 .package-table th {
-    background-color: #cd0909;
-    color: #fff;
+  background-color: #cd0909;
+  color: #fff;
 }
 
 /* =========================
@@ -1092,23 +1012,23 @@ body {
 
 @media (max-width: 767px) {
 
-    .table-responsive {
-        width: 100%;
-        overflow-x: auto;
-        padding: 0 5px;
-    }
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 5px;
+  }
 
-    .package-table {
-        width: 100%;
-        min-width: 0;
-        margin: 0 auto;
-        font-size: 14px;
-    }
+  .package-table {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    font-size: 14px;
+  }
 
-    .package-table th,
-    .package-table td {
-        padding: 12px 8px;
-    }
+  .package-table th,
+  .package-table td {
+    padding: 12px 8px;
+  }
 }
 
 /* ==============================
@@ -1150,138 +1070,15 @@ body {
 
 
 .menu-3-2 .menu-image {
-    height: 220px;
+  height: 220px;
 }
 
 .menu-3-2 .menu-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-.gallery_section {
-    padding-bottom: 80px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
-    justify-items: center;
-}
-
-.gallery-item {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Foto 1–3 */
-.gallery-item:nth-child(1),
-.gallery-item:nth-child(2),
-.gallery-item:nth-child(3) {
-    grid-column: span 2;
-}
-
-/* Foto 4–5 di tengah */
-.gallery-item:nth-child(4) {
-    grid-column: 2 / span 2;
-}
-
-.gallery-item:nth-child(5) {
-    grid-column: 4 / span 2;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease;
-}
-
-.single-gallery {
-    display: flex;
-    justify-content: center;
-}
-
-.single-gallery .gallery-item {
-    width: 100%;
-    max-width: 600px;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.single-gallery .gallery-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-}
-
-/* Animasi zoom */
-.gallery-item:hover img {
-    transform: scale(1.08);
-}
-
-/* Sedikit efek naik + shadow */
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-}
-
-/* =========================
-   RESPONSIVE GALLERY
-   ========================= */
-
-/* Tablet */
-@media (max-width: 991px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .gallery-item:nth-child(1),
-    .gallery-item:nth-child(2),
-    .gallery-item:nth-child(3),
-    .gallery-item:nth-child(4),
-    .gallery-item:nth-child(5) {
-        grid-column: span 1;
-    }
-
-    .gallery-item img {
-        height: 280px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .gallery-item:nth-child(1),
-    .gallery-item:nth-child(2),
-    .gallery-item:nth-child(3),
-    .gallery-item:nth-child(4),
-    .gallery-item:nth-child(5) {
-        grid-column: auto;
-    }
-
-    .gallery-item {
-        width: 100%;
-    }
-
-    .gallery-item img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-}
 /* ==============================
    UKURAN KOLOM
    ============================== */
@@ -1447,14 +1244,14 @@ body {
 ========================================= */
 
 .arrival_section {
-    background-color: #d4ced0;
+  background-color: #d4ced0;
 }
 
 .arrival_section .box {
-    position: relative;
-    min-height: 450px;
-    padding: 80px 45px;
-    overflow: hidden;
+  position: relative;
+  min-height: 450px;
+  padding: 80px 45px;
+  overflow: hidden;
 }
 
 /* =========================================
@@ -1462,26 +1259,23 @@ body {
 ========================================= */
 
 .arrival_section .arrival_bg_box {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 50%;
-    height: 100%;
-
-    overflow: hidden;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .arrival_section .arrival_bg_box img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
 
-    display: block;
-
-    /* SELURUH FOTO TERLIHAT */
-    object-fit: contain;
-    object-position: center;
+  /* SELURUH FOTO TERLIHAT */
+  object-fit: contain;
+  object-position: center;
 }
 
 
@@ -1490,26 +1284,26 @@ body {
 ========================================= */
 
 .arrival_section .box .row {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .arrival_section .box .row .col-md-6 {
-    position: relative;
-    z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 
 .arrival_section .heading_container {
-    color: #002c3e;
-    margin-bottom: 10px;
+  color: #002c3e;
+  margin-bottom: 10px;
 }
 
 .arrival_section .heading_container h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .arrival_section .box p {
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 
@@ -1518,18 +1312,18 @@ body {
 ========================================= */
 
 .arrival_section a {
-    display: inline-block;
-    padding: 10px 45px;
-    background-color: #f7444e;
-    border: 1px solid #f7444e;
-    color: #ffffff;
-    border-radius: 0;
-    transition: all 0.3s;
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #f7444e;
+  border: 1px solid #f7444e;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
 }
 
 .arrival_section a:hover {
-    background-color: transparent;
-    color: #f7444e;
+  background-color: transparent;
+  color: #f7444e;
 }
 
 
@@ -1539,16 +1333,15 @@ body {
 
 @media (max-width: 991px) {
 
-    .arrival_section .box {
-        min-height: 400px;
-        padding: 60px 30px;
-    }
+  .arrival_section .box {
+    min-height: 400px;
+    padding: 60px 30px;
+  }
 
-    .arrival_section .heading_container h2 {
-        font-size: 2.5rem;
-    }
+  .arrival_section .heading_container h2 {
+    font-size: 2.5rem;
+  }
 }
-
 
 /* =========================================
    MOBILE
@@ -1558,125 +1351,100 @@ body {
 
 @media (max-width: 767px) {
 
-    .arrival_section {
-        padding: 0;
-    }
+  .arrival_section {
+    padding: 0;
+  }
 
-    .arrival_section .container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
+  .arrival_section .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
-    /* BOX MENJADI VERTIKAL */
-    .arrival_section .box {
-        min-height: auto;
-        width: 100%;
-
-        padding: 0;
-
-        display: flex;
-        flex-direction: column;
-
-        overflow: hidden;
-
-        background-color: #ffffff;
-    }
+  /* BOX MENJADI VERTIKAL */
+  .arrival_section .box {
+    min-height: auto;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
 
 
-    /* =====================================
+  /* =====================================
        FOTO DI ATAS
     ===================================== */
 
-    .arrival_section .arrival_bg_box {
-        position: relative;
+  .arrival_section .arrival_bg_box {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+  }
 
-        top: auto;
-        left: auto;
-
-        width: 100%;
-        height: auto;
-
-        overflow: hidden;
-
-        z-index: 1;
-    }
-
-    .arrival_section .arrival_bg_box img {
-        position: relative;
-
-        width: 100%;
-        height: auto;
-
-        display: block;
-
-        /*
-         * JANGAN pakai cover,
-         * supaya foto tidak terpotong/zoom
-         */
-        object-fit: contain;
-        object-position: center;
-    }
+  .arrival_section .arrival_bg_box img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+  }
 
 
-    /* =====================================
+  /* =====================================
        KONTEN DI BAWAH FOTO
     ===================================== */
 
-    .arrival_section .box .row {
-        position: relative;
+  .arrival_section .box .row {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    z-index: 2;
+  }
 
-        width: 100%;
-
-        margin: 0;
-        padding: 0;
-
-        display: block;
-
-        z-index: 2;
-    }
-
-    .arrival_section .box .row > div {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 0;
-
-        padding: 30px 25px 35px;
-    }
+  .arrival_section .box .row>div {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 30px 25px 35px;
+  }
 
 
-    /* =====================================
+  /* =====================================
        JUDUL
     ===================================== */
 
-    .arrival_section .heading_container {
-        margin-bottom: 15px;
+  .arrival_section .heading_container {
+    margin-bottom: 15px;
+    align-items: flex-start;
+  }
 
-        align-items: flex-start;
-    }
-
-    .arrival_section .heading_container h2 {
-        font-size: 2rem;
-
-        line-height: 1.2;
-
-        margin-bottom: 0;
-    }
+  .arrival_section .heading_container h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
 
 
-    /* =====================================
+  /* =====================================
        DESKRIPSI
     ===================================== */
 
-    .arrival_section .box p {
-        margin-top: 15px !important;
-        margin-bottom: 20px !important;
-
-        font-size: 14px;
-        line-height: 1.7;
-    }
+  .arrival_section .box p {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 
@@ -1686,31 +1454,33 @@ body {
 
 @media (max-width: 576px) {
 
-    .arrival_section .arrival_bg_box {
-        width: 100%;
-        height: auto;
-    }
+  .arrival_section .arrival_bg_box {
+    width: 100%;
+    height: auto;
+  }
 
-    .arrival_section .arrival_bg_box img {
-        width: 100%;
-        height: auto;
+  .arrival_section .arrival_bg_box img {
+    width: 100%;
+    height: auto;
 
-        object-fit: contain;
-    }
+    object-fit: contain;
+  }
 
-    .arrival_section .box .row > div {
-        padding: 25px 20px 30px;
-    }
+  .arrival_section .box .row>div {
+    padding: 25px 20px 30px;
+  }
 
-    .arrival_section .heading_container h2 {
-        font-size: 1.8rem;
-    }
+  .arrival_section .heading_container h2 {
+    font-size: 1.8rem;
+  }
 
-    .arrival_section .box p {
-        font-size: 14px;
-        line-height: 1.65;
-    }
+  .arrival_section .box p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
 }
+
+
 .why_section .box {
   text-align: center;
   margin-top: 45px;
@@ -1748,17 +1518,6 @@ body {
   margin-bottom: 45px;
 }
 
-
-/* 
-   Jangan menentukan font-size di sini.
-   Ukuran akan mengikuti:
-   
-   .heading_container h2 {
-      font-size: 3.5rem;
-   }
-   
-   sehingga sama dengan Paket Layanan.
-*/
 .why_section .heading_container h2 {
   position: relative;
   margin-bottom: 0;
@@ -1766,7 +1525,6 @@ body {
   color: #222222;
   line-height: 1.2;
 }
-
 
 /* =========================================
    WARNA "KAMI"
@@ -1777,17 +1535,6 @@ body {
   position: relative;
   display: inline-block;
 }
-
-
-/* =========================================
-   HILANGKAN GARIS BAWAAN H2
-   
-   Karena garis bawaan berada di:
-   .heading_container h2::after
-   
-   Garis tersebut akan berada di bawah
-   seluruh "Tentang Kami".
-========================================= */
 
 .why_section .heading_container h2::after {
   display: none;
@@ -1801,12 +1548,9 @@ body {
 .why_section .heading_container h2 span::after {
   content: "";
   display: block;
-
   width: 70px;
   height: 5px;
-
   background: #cd0909;
-
   margin: 10px auto 10px;
 }
 
@@ -1817,11 +1561,8 @@ body {
 
 .why_section .heading_container p {
   max-width: 650px;
-
   margin: 10px auto 0;
-
   color: #777777;
-
   font-size: 16px;
   line-height: 1.7;
 }
@@ -1833,27 +1574,18 @@ body {
 
 .about_card {
   position: relative;
-
   width: 100%;
   height: 100%;
-
   padding: 40px 30px;
-
   text-align: center;
-
   background: #ffffff;
-
   border-radius: 20px;
-
   border: 1px solid #eeeeee;
-
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
     border-color 0.3s ease;
-
   overflow: hidden;
 }
 
@@ -1864,19 +1596,13 @@ body {
 
 .about_card::before {
   content: "";
-
   position: absolute;
-
   top: 0;
   left: 50%;
-
   width: 0;
   height: 4px;
-
   background: #f7444e;
-
   transform: translateX(-50%);
-
   transition: width 0.3s ease;
 }
 
@@ -1887,9 +1613,7 @@ body {
 
 .about_card:hover {
   transform: translateY(-10px);
-
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
-
   border-color: #f7444e;
 }
 
@@ -1910,22 +1634,14 @@ body {
 .about_icon {
   width: 85px;
   height: 85px;
-
   margin: 0 auto 25px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: #fff1f2;
-
   color: #f7444e;
-
   font-size: 34px;
-
   transition: all 0.3s ease;
 }
 
@@ -1936,9 +1652,7 @@ body {
 
 .about_card:hover .about_icon {
   background: #f7444e;
-
   color: #ffffff;
-
   transform: scale(1.08) rotate(3deg);
 }
 
@@ -1949,11 +1663,8 @@ body {
 
 .about_content h5 {
   font-size: 21px;
-
   font-weight: 700;
-
   color: #222222;
-
   margin-bottom: 15px;
 }
 
@@ -1964,11 +1675,8 @@ body {
 
 .about_content p {
   margin: 0;
-
   color: #777777;
-
   font-size: 15px;
-
   line-height: 1.7;
 }
 
@@ -2028,9 +1736,7 @@ body {
   .about_icon {
     width: 75px;
     height: 75px;
-
     font-size: 30px;
-
     margin-bottom: 20px;
   }
 
@@ -2045,6 +1751,133 @@ body {
 
 }
 
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery_section {
+  padding-bottom: 80px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.gallery-item {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Foto 1–3 */
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(2),
+.gallery-item:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* Foto 4–5 di tengah */
+.gallery-item:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.gallery-item:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.single-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.single-gallery .gallery-item {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.single-gallery .gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Animasi zoom */
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Sedikit efek naik + shadow */
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   RESPONSIVE GALLERY
+   ========================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3),
+  .gallery-item:nth-child(4),
+  .gallery-item:nth-child(5) {
+    grid-column: span 1;
+  }
+
+  .gallery-item img {
+    height: 280px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3),
+  .gallery-item:nth-child(4),
+  .gallery-item:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
 
 /* =========================================
    CERITA DBC - GAMBAR PERSEGI PANJANG
@@ -2052,60 +1885,52 @@ body {
 
 /* Area gambar */
 #carouselExample3Controls .img_container {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-bottom: 15px !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 15px !important;
 }
 
 
 /* Kotak utama gambar */
 #carouselExample3Controls .img-box {
-    width: 520px !important;
-    max-width: 90% !important;
-    height: 280px !important;
+  width: 520px !important;
+  max-width: 90% !important;
+  height: 280px !important;
 
-    margin: 0 auto !important;
-    padding: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
 
-    overflow: hidden !important;
+  overflow: hidden !important;
 
-    /* INI YANG MEMBUAT PERSEGI PANJANG */
-    border-radius: 10px !important;
+  /* INI YANG MEMBUAT PERSEGI PANJANG */
+  border-radius: 10px !important;
 
-    background: transparent !important;
+  background: transparent !important;
 }
 
 
 /* Inner gambar */
 #carouselExample3Controls .img_box-inner {
-    width: 100% !important;
-    height: 100% !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    overflow: hidden !important;
-
-    border-radius: 10px !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 10px !important;
 }
-
 
 /* Foto */
 #carouselExample3Controls .img_box-inner img {
-    width: 100% !important;
-    height: 100% !important;
-
-    display: block !important;
-
-    object-fit: cover !important;
-    object-position: center !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border-radius: 10px !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
 }
 
 
@@ -2114,34 +1939,27 @@ body {
 ========================================= */
 
 #carouselExample3Controls .detail-box {
-    text-align: center !important;
-
-    width: 100% !important;
-    max-width: 850px !important;
-
-    margin: 0 auto !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 850px !important;
+  margin: 0 auto !important;
 }
 
 
 #carouselExample3Controls .detail-box h5 {
-    font-size: 24px !important;
-    font-weight: 700 !important;
-
-    color: #111 !important;
-
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 
 #carouselExample3Controls .detail-box p {
-    font-size: 16px !important;
-
-    line-height: 1.6 !important;
-
-    color: #555 !important;
-
-    margin: 0 auto !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #555 !important;
+  margin: 0 auto !important;
 }
 
 
@@ -2151,30 +1969,25 @@ body {
 
 #carouselExample3Controls .carousel-control-prev,
 #carouselExample3Controls .carousel-control-next {
-    width: 55px !important;
-    height: 55px !important;
-
-    top: 50% !important;
-
-    transform: translateY(-50%) !important;
-
-    background-color: #ff4757 !important;
-
-    border-radius: 50% !important;
-
-    opacity: 1 !important;
+  width: 55px !important;
+  height: 55px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background-color: #ff4757 !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
 }
 
 
 /* Tombol kiri */
 #carouselExample3Controls .carousel-control-prev {
-    left: 12% !important;
+  left: 12% !important;
 }
 
 
 /* Tombol kanan */
 #carouselExample3Controls .carousel-control-next {
-    right: 12% !important;
+  right: 12% !important;
 }
 
 
@@ -2184,50 +1997,48 @@ body {
 
 @media (max-width: 767px) {
 
-    #carouselExample3Controls .img-box {
-        width: 90% !important;
-        max-width: 350px !important;
+  #carouselExample3Controls .img-box {
+    width: 90% !important;
+    max-width: 350px !important;
+    height: 200px !important;
+  }
 
-        height: 200px !important;
-    }
+  #carouselExample3Controls .img_box-inner {
+    width: 100% !important;
+    height: 100% !important;
+  }
 
-    #carouselExample3Controls .img_box-inner {
-        width: 100% !important;
-        height: 100% !important;
-    }
+  #carouselExample3Controls .img_box-inner img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
 
-    #carouselExample3Controls .img_box-inner img {
-        width: 100% !important;
-        height: 100% !important;
+  #carouselExample3Controls .detail-box {
+    padding: 0 20px !important;
+  }
 
-        object-fit: cover !important;
-    }
+  #carouselExample3Controls .detail-box h5 {
+    font-size: 21px !important;
+  }
 
-    #carouselExample3Controls .detail-box {
-        padding: 0 20px !important;
-    }
+  #carouselExample3Controls .detail-box p {
+    font-size: 14px !important;
+  }
 
-    #carouselExample3Controls .detail-box h5 {
-        font-size: 21px !important;
-    }
+  #carouselExample3Controls .carousel-control-prev,
+  #carouselExample3Controls .carousel-control-next {
+    width: 45px !important;
+    height: 45px !important;
+  }
 
-    #carouselExample3Controls .detail-box p {
-        font-size: 14px !important;
-    }
+  #carouselExample3Controls .carousel-control-prev {
+    left: 3% !important;
+  }
 
-    #carouselExample3Controls .carousel-control-prev,
-    #carouselExample3Controls .carousel-control-next {
-        width: 45px !important;
-        height: 45px !important;
-    }
-
-    #carouselExample3Controls .carousel-control-prev {
-        left: 3% !important;
-    }
-
-    #carouselExample3Controls .carousel-control-next {
-        right: 3% !important;
-    }
+  #carouselExample3Controls .carousel-control-next {
+    right: 3% !important;
+  }
 
 }
 
@@ -2429,10 +2240,6 @@ body {
   background-color: #002c3e;
   color: #ffffff;
   padding-top: 70px;
-}
-
-.footer_section {
-  color: #ffffff;
   text-align: left;
 }
 
@@ -2508,7 +2315,6 @@ body {
   height: 30px;
   border-radius: 100%;
   background-color: #ffffff;
-  border-radius: 100%;
   margin: 0 2.5px;
   font-size: 18px;
 }
@@ -2557,17 +2363,17 @@ body {
 }
 
 .information_f p a {
-    color: #000000 !important;
-    text-decoration: none !important;
+  color: #000000 !important;
+  text-decoration: none !important;
 }
 
 .information_f p a:hover {
-    color: #000000 !important;
-    text-decoration: none !important;
+  color: #000000 !important;
+  text-decoration: none !important;
 }
 
 .information_f p a:visited {
-    color: #000000 !important;
+  color: #000000 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -2612,7 +2418,7 @@ li.nav-item ul li a:focus {
 }
 
 .inner_page_head {
-  background: #ffbe4e!important;
+  background: #ffbe4e !important;
   text-align: center;
   color: #fff;
   padding-top: 50px;
@@ -2629,16 +2435,16 @@ li.nav-item ul li a:focus {
 ============================== */
 
 section.inner_page_head {
-    background-color: #ffbe4e !important;
-    background: #ffbe4e !important;
+  background-color: #ffbe4e !important;
+  background: #ffbe4e !important;
 }
 
 section.inner_page_head .full {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 section.inner_page_head h3 {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 
