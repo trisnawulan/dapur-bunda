@@ -271,496 +271,6 @@ a:focus {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/*end header section*/
-
-
-/* =========================================
-   SLIDER SECTION
-========================================= */
-
-.slider_section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-height: 650px;
-  padding: 90px 0 75px;
-  overflow: hidden;
-}
-
-
-/* =========================================
-   BACKGROUND IMAGE - DESKTOP
-========================================= */
-
-.slider_section .slider_bg_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.slider_section .slider_bg_box img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  object-fit: cover;
-  object-position: top right;
-}
-
-
-/* =========================================
-   CAROUSEL
-========================================= */
-
-.slider_section #customCarousel1 {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  min-height: 485px;
-}
-
-.slider_section .carousel-item {
-  min-height: 485px;
-}
-
-/* =========================================
-   CONTAINER
-========================================= */
-
-.slider_section .container {
-  position: relative;
-  z-index: 3;
-}
-
-/* =========================================
-   ROW
-========================================= */
-
-.slider_section .row {
-  display: flex;
-  align-items: center;
-}
-
-
-/* =========================================
-   DETAIL BOX
-========================================= */
-
-.slider_section .detail-box {
-  position: relative;
-  z-index: 4;
-}
-
-
-/* =========================================
-   TITLE
-========================================= */
-
-.slider_section .detail-box h1 {
-  margin-bottom: 15px;
-  font-size: 4.5rem;
-  font-weight: bold;
-  line-height: 70px;
-  color: #ffce51 !important;
-  -webkit-text-stroke: 3px rgb(254, 248, 248) !important;
-  paint-order: stroke fill;
-}
-
-.slider_section .detail-box h1 span {
-  color: #cd0909 !important;
-  -webkit-text-stroke: 3px rgb(254, 250, 250) !important;
-  paint-order: stroke fill;
-}
-
-
-/* =========================================
-   DESCRIPTION
-========================================= */
-
-.slider_section .detail-box p {
-  margin-top: 20px;
-  margin-bottom: 1.5rem;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-
-/* =========================================
-   BUTTON
-========================================= */
-
-.slider_section .detail-box .btn-box {
-  margin-top: 10px;
-}
-
-.slider_section .detail-box .btn-box a {
-  display: inline-block;
-  padding: 12px 45px;
-  background-color: #1b623a;
-  border: 1px solid #1b623a;
-  border-radius: 0;
-  color: #ffffff;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.slider_section .detail-box .btn-box a:hover {
-  background-color: transparent;
-  color: #1b623a;
-}
-
-
-/* =========================================
-   CAROUSEL INDICATORS
-========================================= */
-
-.slider_section #customCarousel1 .carousel-indicators {
-  position: absolute !important;
-  top: 400px !important;
-  left: calc((100% - 1140px) / 2) !important;
-  right: auto !important;
-  bottom: auto !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  width: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  z-index: 20 !important;
-}
-
-.slider_section #customCarousel1 .carousel-indicators li {
-  width: 12px !important;
-  height: 12px !important;
-  margin: 0 8px 0 0 !important;
-  padding: 0 !important;
-  background-color: #ffffff;
-  border-radius: 50%;
-  opacity: 1 !important;
-  cursor: pointer;
-}
-
-.slider_section #customCarousel1 .carousel-indicators li.active {
-  width: 20px !important;
-  height: 20px !important;
-  background-color: #cd0909;
-}
-
-
-/* =========================================
-   TABLET
-   MAX WIDTH: 1199px
-========================================= */
-
-@media (max-width: 1199px) {
-
-  .slider_section #customCarousel1 .carousel-indicators {
-    top: 400px !important;
-    left: calc((100% - 960px) / 2 + 15px) !important;
-  }
-
-}
-
-
-/* =========================================
-   TABLET KECIL
-   MAX WIDTH: 991px
-========================================= */
-
-@media (max-width: 991px) {
-
-  /* Section */
-  .slider_section {
-    min-height: 600px;
-    padding: 80px 0 70px;
-  }
-
-  /* Carousel */
-  .slider_section #customCarousel1 {
-    min-height: 450px;
-  }
-
-  .slider_section .carousel-item {
-    min-height: 450px;
-  }
-
-  /* Judul */
-  .slider_section .detail-box h1 {
-    font-size: 3.5rem;
-    line-height: 55px;
-  }
-
-  /* Indicator */
-  .slider_section #customCarousel1 .carousel-indicators {
-    top: 380px !important;
-    left: 15px !important;
-  }
-
-}
-
-
-/* =========================================
-   MOBILE
-   MAX WIDTH: 767px
-
-   Gambar di atas
-   Konten di bawah
-========================================= */
-
-@media (max-width: 767px) {
-
-  /* =====================================
-     SECTION
-  ===================================== */
-
-  .slider_section {
-    position: relative !important;
-    display: block !important;
-    width: 100% !important;
-    min-height: auto !important;
-    height: auto !important;
-    padding: 0 !important;
-    overflow: visible !important;
-    background-color: #ffffff;
-  }
-
-
-  /* =====================================
-     GAMBAR
-     Tidak lagi absolute
-  ===================================== */
-
-  .slider_section .slider_bg_box {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: 300px !important;
-    overflow: hidden !important;
-    z-index: 1 !important;
-  }
-
-  .slider_section .slider_bg_box img {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
-    object-fit: cover !important;
-    object-position: center !important;
-  }
-
-
-  /* =====================================
-     CAROUSEL
-  ===================================== */
-
-  .slider_section #customCarousel1 {
-    position: relative !important;
-    width: 100% !important;
-    min-height: auto !important;
-    height: auto !important;
-    z-index: 2 !important;
-  }
-
-
-  /* =====================================
-     SLIDE
-  ===================================== */
-
-  .slider_section .carousel-item {
-    position: relative !important;
-    min-height: auto !important;
-    height: auto !important;
-    padding: 35px 0 75px !important;
-  }
-
-
-  /* =====================================
-     CONTAINER
-  ===================================== */
-
-  .slider_section .container {
-    position: relative !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-  }
-
-
-  /* =====================================
-     ROW
-  ===================================== */
-
-  .slider_section .row {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
-
-  .slider_section .row>[class*="col-"] {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  }
-
-
-  /* =====================================
-     CONTENT
-  ===================================== */
-
-  .slider_section .detail-box {
-    position: relative !important;
-    width: 100% !important;
-    padding: 0 !important;
-    text-align: left;
-  }
-
-
-  /* =====================================
-     JUDUL
-  ===================================== */
-
-  .slider_section .detail-box h1 {
-    margin-top: 0 !important;
-    margin-bottom: 15px !important;
-    font-size: 2.5rem !important;
-    line-height: 1.15 !important;
-    color: #ffce51;
-  }
-
-  .slider_section .detail-box h1 span {
-    color: #cd0909;
-  }
-
-
-  /* =====================================
-     DESKRIPSI
-  ===================================== */
-
-  .slider_section .detail-box p {
-    margin-top: 15px !important;
-    margin-bottom: 20px !important;
-    font-size: 14px !important;
-    line-height: 1.7 !important;
-    color: #333333;
-  }
-
-
-  /* =====================================
-     BUTTON
-  ===================================== */
-
-  .slider_section .detail-box .btn-box {
-    margin-top: 15px !important;
-  }
-
-  .slider_section .detail-box .btn-box a {
-    display: inline-block !important;
-    padding: 11px 30px !important;
-    font-size: 14px;
-  }
-
-
-  /* =====================================
-     CAROUSEL DOT
-  ===================================== */
-
-  .slider_section #customCarousel1 .carousel-indicators {
-    position: absolute !important;
-    top: 85% !important;
-    left: 20px !important;
-    right: auto !important;
-    bottom: auto !important;
-    display: flex !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    transform: none !important;
-    z-index: 9999 !important;
-  }
-
-  .slider_section #customCarousel1 .carousel-indicators li {
-    width: 10px !important;
-    height: 10px !important;
-    margin: 0 7px 0 0 !important;
-    background-color: #cccccc;
-    border-radius: 50%;
-    opacity: 1 !important;
-  }
-
-  .slider_section #customCarousel1 .carousel-indicators li.active {
-    width: 18px !important;
-    height: 18px !important;
-    background-color: #cd0909;
-  }
-
-}
-
-
-/* =========================================
-   HP KECIL
-   MAX WIDTH: 576px
-========================================= */
-
-@media (max-width: 576px) {
-
-  /* Gambar */
-  .slider_section .slider_bg_box {
-    width: 100% !important;
-    height: 240px !important;
-  }
-
-
-  /* Slide */
-  .slider_section .carousel-item {
-    padding: 30px 0 75px !important;
-  }
-
-
-  /* Container */
-  .slider_section .container {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-  }
-
-
-  /* Judul */
-  .slider_section .detail-box h1 {
-    font-size: 2.2rem !important;
-    line-height: 1.15 !important;
-  }
-
-
-  /* Deskripsi */
-  .slider_section .detail-box p {
-    font-size: 13px !important;
-    line-height: 1.7 !important;
-  }
-
-
-  /* Indicator */
-  .slider_section #customCarousel1 .carousel-indicators {
-    left: 20px !important;
-    bottom: 20px !important;
-  }
-
-}
-
 /* Custom Dropdown */
 .custom-dropdown {
   min-width: 250px;
@@ -811,10 +321,929 @@ a:focus {
   color: #888;
 }
 
-/* ==============================
-   PACKAGE CARD
-   ============================== */
+/*end header section*/
 
+
+/* =========================================
+      SLIDER SECTION 
+=========================================*/
+.slider_section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 650px;
+  padding: 90px 0 75px;
+  overflow: hidden;
+}
+
+/* BACKGROUND IMAGE - DESKTOP Tetap overlay di laptop/desktop*/
+.slider_section .slider_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider_section .slider_bg_box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: top right;
+}
+
+/* CAROUSEL */
+.slider_section #customCarousel1 {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 485px;
+}
+
+.slider_section .carousel-item {
+  min-height: 485px;
+}
+
+/* CONTAINER */
+.slider_section .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* ROW */
+.slider_section .row {
+  display: flex;
+  align-items: center;
+}
+
+/* DETAIL BOX */
+.slider_section .detail-box {
+  position: relative;
+  z-index: 4;
+}
+
+/* TITLE */
+.slider_section .detail-box h1 {
+  margin-bottom: 15px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 70px;
+  color: #ffce51 !important;
+  -webkit-text-stroke: 3px rgb(254, 248, 248) !important;
+  paint-order: stroke fill;
+}
+
+.slider_section .detail-box h1 span {
+  color: #cd0909 !important;
+  -webkit-text-stroke: 3px rgb(254, 250, 250) !important;
+  paint-order: stroke fill;
+}
+
+/* DESCRIPTION */
+.slider_section .detail-box p {
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.slider_section .detail-box .btn-box {
+  margin-top: 10px;
+}
+
+.slider_section .detail-box .btn-box a {
+  display: inline-block;
+  padding: 12px 45px;
+  background-color: #1b623a;
+  border: 1px solid #1b623a;
+  border-radius: 0;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.slider_section .detail-box .btn-box a:hover {
+  background-color: transparent;
+  color: #1b623a;
+}
+
+/* CAROUSEL INDICATORS - DESKTOP */
+.slider_section .carousel-item .carousel-indicators {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 22px 0 0 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  z-index: 20 !important;
+}
+
+.slider_section .carousel-item .carousel-indicators li {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 8px 0 0 !important;
+  padding: 0 !important;
+  background-color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.slider_section .carousel-item .carousel-indicators li.active {
+  width: 20px !important;
+  height: 20px !important;
+
+  background-color: #cd0909 !important;
+}
+
+/* TABLET MAX WIDTH: 1199px */
+@media (max-width: 1199px) {
+  .slider_section #customCarousel1 .carousel-indicators {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin: 22px 0 0 0 !important;
+    transform: none !important;
+  }
+}
+
+
+/* TABLET / SPLIT SCREEN MAX WIDTH: 991px */
+@media (max-width: 991px) {
+  .slider_section {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background-color: #ffffff;
+  }
+
+  .slider_section .slider_bg_box {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 360px !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+  }
+
+  .slider_section .slider_bg_box img {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .slider_section #customCarousel1 {
+    position: relative !important;
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    z-index: 2 !important;
+  }
+
+  .slider_section .carousel-inner {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .slider_section .carousel-item {
+    position: relative !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 45px 0 45px !important;
+  }
+
+  .slider_section .container {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+
+  .slider_section .row {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .slider_section .row>[class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .slider_section .detail-box {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .slider_section .detail-box h1 {
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+    font-size: 3.5rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .slider_section .detail-box p {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    color: #333333;
+  }
+
+  .slider_section .detail-box .btn-box {
+    display: block !important;
+    margin-top: 15px !important;
+    position: relative !important;
+  }
+
+  .slider_section .detail-box .btn-box a {
+    display: inline-block !important;
+    padding: 11px 30px !important;
+    font-size: 14px !important;
+  }
+
+  /* DOT WAJIB RELATIVE AGAR BERADA DI BAWAH BUTTON */
+  .slider_section .carousel-item .carousel-indicators,
+  .slider_section .detail-box .carousel-indicators {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 20px 0 0 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    z-index: 10 !important;
+  }
+
+  .slider_section .carousel-item .carousel-indicators li,
+  .slider_section .detail-box .carousel-indicators li {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 8px 0 0 !important;
+    padding: 0 !important;
+    background-color: #cccccc !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+  }
+
+
+  .slider_section .carousel-item .carousel-indicators li.active,
+  .slider_section .detail-box .carousel-indicators li.active {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #cd0909 !important;
+  }
+}
+
+/* MOBILE MAX WIDTH: 767px */
+@media (max-width: 767px) {
+  .slider_section .slider_bg_box {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .slider_section .slider_bg_box img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .slider_section .carousel-item {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 35px 0 40px !important;
+  }
+
+  .slider_section .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  .slider_section .detail-box {
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .slider_section .detail-box h1 {
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+    font-size: 2.5rem !important;
+    line-height: 1.15 !important;
+    -webkit-text-stroke: 2px rgb(254, 248, 248) !important;
+  }
+
+  .slider_section .detail-box h1 span {
+    -webkit-text-stroke: 2px rgb(254, 250, 250) !important;
+  }
+
+  .slider_section .detail-box p {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    color: #333333 !important;
+  }
+
+  .slider_section .detail-box .btn-box {
+    margin-top: 15px !important;
+  }
+
+  .slider_section .detail-box .btn-box a {
+    display: inline-block !important;
+    padding: 11px 30px !important;
+    font-size: 14px !important;
+  }
+
+  .slider_section .carousel-item .carousel-indicators,
+  .slider_section .detail-box .carousel-indicators {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 20px 0 0 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    z-index: 10 !important;
+  }
+
+  .slider_section .carousel-item .carousel-indicators li,
+  .slider_section .detail-box .carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 7px 0 0 !important;
+    padding: 0 !important;
+    background-color: #cccccc !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+  }
+
+
+  .slider_section .carousel-item .carousel-indicators li.active,
+  .slider_section .detail-box .carousel-indicators li.active {
+    width: 18px !important;
+    height: 18px !important;
+    background-color: #cd0909 !important;
+  }
+}
+
+
+/*  HP KECIL MAX WIDTH: 576px */
+@media (max-width: 576px) {
+  .slider_section .slider_bg_box {
+    height: 240px !important;
+  }
+
+  .slider_section .carousel-item {
+    padding: 30px 0 35px !important;
+  }
+
+  .slider_section .container {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 2.2rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .slider_section .detail-box p {
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+
+  .slider_section .carousel-item .carousel-indicators,
+  .slider_section .detail-box .carousel-indicators {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin: 20px 0 0 0 !important;
+    transform: none !important;
+  }
+}
+
+
+
+/* =========================================
+    TENTANG KAMI  
+    =========================================*/
+.why_section {
+  background: #ffffff;
+  padding: 70px 0;
+}
+
+.why_section .box {
+  text-align: center;
+  margin-top: 45px;
+  background-color: #ffce51;
+  padding: 45px 50px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.detail-box h5 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.remove_line_bt h2::after {
+  display: none;
+}
+
+
+/* HEADING TENTANG KAMI Mengikuti ukuran heading Paket Layanan */
+.why_section .heading_container {
+  margin-bottom: 45px;
+}
+
+.why_section .heading_container h2 {
+  position: relative;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #222222;
+  line-height: 1.2;
+}
+
+/* WARNA "KAMI" */
+.why_section .heading_container h2 span {
+  color: #cd0909;
+  position: relative;
+  display: inline-block;
+}
+
+.why_section .heading_container h2::after {
+  display: none;
+}
+
+
+/* GARIS HANYA DI BAWAH "KAMI" */
+.why_section .heading_container h2 span::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #cd0909;
+  margin: 10px auto 10px;
+}
+
+/*DESKRIPSI TENTANG KAMI*/
+.why_section .heading_container p {
+  max-width: 650px;
+  margin: 10px auto 0;
+  color: #777777;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* CARD TENTANG KAMI */
+.about_card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  overflow: hidden;
+}
+
+
+/* GARIS MERAH DI ATAS CARD */
+.about_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background: #f7444e;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+
+/* HOVER CARD */
+.about_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+  border-color: #f7444e;
+}
+
+
+/* HOVER GARIS CARD */
+.about_card:hover::before {
+  width: 100%;
+}
+
+
+/*ICON */
+.about_icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff1f2;
+  color: #f7444e;
+  font-size: 34px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER ICON */
+.about_card:hover .about_icon {
+  background: #f7444e;
+  color: #ffffff;
+  transform: scale(1.08) rotate(3deg);
+}
+
+/* JUDUL CARD */
+.about_content h5 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+/* DESKRIPSI CARD */
+.about_content p {
+  margin: 0;
+  color: #777777;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* RESPONSIVE TABLET */
+@media (max-width: 991px) {
+
+  .about_card {
+    padding: 35px 20px;
+  }
+
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 767px) {
+
+  .why_section {
+    padding: 60px 0;
+  }
+
+  .why_section .heading_container {
+    margin-bottom: 30px;
+  }
+
+  .about_card {
+    margin-bottom: 20px;
+  }
+
+}
+
+/*RESPONSIVE HP KECIL */
+@media (max-width: 576px) {
+
+  .why_section {
+    padding: 50px 0;
+  }
+
+  .why_section .heading_container {
+    margin-bottom: 25px;
+  }
+
+  .about_card {
+    padding: 30px 20px;
+  }
+
+  .about_icon {
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about_content h5 {
+    font-size: 19px;
+  }
+
+  .about_content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+}
+
+
+
+/* =========================================
+   ARRIVAL / SERTIFIKAT HALAL
+========================================= */
+
+.arrival_section {
+  background-color: #d4ced0;
+}
+
+.arrival_section .box {
+  position: relative;
+  min-height: 450px;
+  padding: 80px 45px;
+  overflow: hidden;
+}
+
+/* GAMBAR - DESKTOP */
+.arrival_section .arrival_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.arrival_section .arrival_bg_box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  /* SELURUH FOTO TERLIHAT */
+  object-fit: contain;
+  object-position: center;
+}
+
+/* KONTEN - DESKTOP */
+.arrival_section .box .row {
+  position: relative;
+  z-index: 2;
+}
+
+.arrival_section .box .row .col-md-6 {
+  position: relative;
+  z-index: 3;
+}
+
+.arrival_section .heading_container {
+  color: #002c3e;
+  margin-bottom: 10px;
+}
+
+.arrival_section .heading_container h2 {
+  font-size: 3rem;
+}
+
+.arrival_section .box p {
+  line-height: 1.7;
+}
+
+/* BUTTON */
+.arrival_section a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #f7444e;
+  border: 1px solid #f7444e;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.arrival_section a:hover {
+  background-color: transparent;
+  color: #f7444e;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+
+  /* Sertifikat Halal */
+  .arrival_section .box {
+    min-height: auto;
+    padding: 40px 30px;
+  }
+
+  .arrival_section .arrival_bg_box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .arrival_section .arrival_bg_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .arrival_section .row {
+    margin: 0;
+  }
+
+  .arrival_section .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-left: 0 !important;
+  }
+
+  .arrival_section .heading_container {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .arrival_section p {
+    position: relative;
+    margin-top: 15px !important;
+  }
+}
+
+/* MOBILE FOTO DI ATAS KONTEN DI BAWAH */
+
+@media (max-width: 767px) {
+
+  .arrival_section {
+    padding: 0;
+  }
+
+  .arrival_section .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* BOX MENJADI VERTIKAL */
+  .arrival_section .box {
+    min-height: auto;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  /* FOTO DI ATAS */
+  .arrival_section .arrival_bg_box {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .arrival_section .arrival_bg_box img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+  }
+
+
+  /* KONTEN DI BAWAH FOTO*/
+  .arrival_section .box .row {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    z-index: 2;
+  }
+
+  .arrival_section .box .row>div {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 30px 25px 35px;
+  }
+
+
+  /* JUDUL */
+
+  .arrival_section .heading_container {
+    margin-bottom: 15px;
+    align-items: flex-start;
+  }
+
+  .arrival_section .heading_container h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+
+
+  /* DESKRIPSI*/
+
+  .arrival_section .box p {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+
+/*HP KECIL*/
+@media (max-width: 576px) {
+
+  .arrival_section .arrival_bg_box {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrival_section .arrival_bg_box img {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+  .arrival_section .box .row>div {
+    padding: 25px 20px 30px;
+  }
+
+  .arrival_section .heading_container h2 {
+    font-size: 1.8rem;
+  }
+
+  .arrival_section .box p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+
+/* PACKAGE CARD*/
 .package-selection {
   padding: 60px 15px;
 }
@@ -835,10 +1264,7 @@ a:focus {
 }
 
 
-/* ==============================
-   CARD PAKET
-   ============================== */
-
+/* CARD PAKET */
 .package-card {
   display: block;
   width: 100%;
@@ -847,30 +1273,21 @@ a:focus {
   border-radius: 18px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
   overflow: hidden;
-
-  /* Tidak ada margin supaya jarak diatur dari kolom */
   margin: 0;
-
   text-decoration: none !important;
   color: #333;
   height: 100%;
   transition: all 0.3s ease;
 }
 
-
 /* Efek hover */
-
 .package-card:hover {
   transform: translateY(-8px);
   border-color: #d4a373;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
 }
 
-
-/* ==============================
-   TOMBOL PAKET
-   ============================== */
-
+/* TOMBOL PAKET */
 .package-buttons {
   display: flex;
   justify-content: center;
@@ -887,7 +1304,6 @@ a:focus {
   font-weight: 600;
   transition: all 0.3s ease;
 }
-
 
 /* Tombol Selengkapnya */
 .btn-detail {
@@ -913,10 +1329,7 @@ a:focus {
 }
 
 
-/* ==============================
-   FOTO CARD
-   ============================== */
-
+/* FOTO CARD */
 .package-image {
   width: 100%;
   height: 220px;
@@ -934,10 +1347,7 @@ a:focus {
   transform: scale(1.08);
 }
 
-/* =========================================
-   FIX GAP CARD PAKET LAYANAN
-   ========================================= */
-
+/* FIX GAP CARD PAKET LAYANAN */
 #paketlayanan .row.justify-content-center {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -952,10 +1362,7 @@ a:focus {
   margin: 0 !important;
 }
 
-/* ==============================
-   ISI CARD
-   ============================== */
-
+/* ISI CARD */
 .package-content {
   padding: 25px 20px;
   text-align: center;
@@ -1006,10 +1413,7 @@ a:focus {
   color: #fff;
 }
 
-/* =========================
-   RESPONSIVE TABLE
-   ========================= */
-
+/* RESPONSIVE TABLE */
 @media (max-width: 767px) {
 
   .table-responsive {
@@ -1031,10 +1435,7 @@ a:focus {
   }
 }
 
-/* ==============================
-   SCROLL POSITION
-   ============================== */
-
+/* SCROLL POSITION */
 #paket35 {
   scroll-margin-top: 100px;
 }
@@ -1047,10 +1448,7 @@ a:focus {
   scroll-margin-top: 100px;
 }
 
-/* ==============================
-   CARD PAKET LAYANAN
-   ============================== */
-
+/* CARD PAKET LAYANAN */
 .menu-boxes {
   padding: 5px 10px 40px;
   display: flex;
@@ -1068,7 +1466,6 @@ a:focus {
   margin-bottom: 30px;
 }
 
-
 .menu-3-2 .menu-image {
   height: 220px;
 }
@@ -1079,18 +1476,12 @@ a:focus {
   object-fit: cover;
 }
 
-/* ==============================
-   UKURAN KOLOM
-   ============================== */
-
+/*UKURAN KOLOM */
 .col-sm-6.col-md-3 {
   margin-bottom: 0;
 }
 
-/* ==============================
-   MENU BOX / CARD
-   ============================== */
-
+/* MENU BOX / CARD*/
 .menu-box {
   background-color: #ffffff;
   padding: 20px 20px;
@@ -1120,10 +1511,7 @@ a:focus {
 }
 
 
-/* ==============================
-   FOTO MENU
-   ============================== */
-
+/* FOTO MENU*/
 .menu-image {
   width: 100%;
   height: 180px;
@@ -1143,10 +1531,7 @@ a:focus {
 }
 
 
-/* ==============================
-   ISI MENU
-   ============================== */
-
+/* -ISI MENU- */
 .menu-content {
   padding: 10px;
 }
@@ -1174,10 +1559,7 @@ a:focus {
 }
 
 
-/* ==============================
-   TOMBOL MENU
-   ============================== */
-
+/* TOMBOL MENU */
 .menu-buttons {
   display: flex;
   gap: 10px;
@@ -1214,9 +1596,7 @@ a:focus {
 }
 
 
-/* ==============================
-   ANIMASI MENU
-   ============================== */
+/* ANIMASI MENU */
 
 .animate-menu {
   opacity: 0;
@@ -1239,517 +1619,6 @@ a:focus {
   }
 }
 
-/* =========================================
-   ARRIVAL / SERTIFIKAT HALAL
-========================================= */
-
-.arrival_section {
-  background-color: #d4ced0;
-}
-
-.arrival_section .box {
-  position: relative;
-  min-height: 450px;
-  padding: 80px 45px;
-  overflow: hidden;
-}
-
-/* =========================================
-   GAMBAR - DESKTOP
-========================================= */
-
-.arrival_section .arrival_bg_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.arrival_section .arrival_bg_box img {
-  width: 100%;
-  height: 100%;
-  display: block;
-
-  /* SELURUH FOTO TERLIHAT */
-  object-fit: contain;
-  object-position: center;
-}
-
-
-/* =========================================
-   KONTEN - DESKTOP
-========================================= */
-
-.arrival_section .box .row {
-  position: relative;
-  z-index: 2;
-}
-
-.arrival_section .box .row .col-md-6 {
-  position: relative;
-  z-index: 3;
-}
-
-.arrival_section .heading_container {
-  color: #002c3e;
-  margin-bottom: 10px;
-}
-
-.arrival_section .heading_container h2 {
-  font-size: 3rem;
-}
-
-.arrival_section .box p {
-  line-height: 1.7;
-}
-
-
-/* =========================================
-   BUTTON
-========================================= */
-
-.arrival_section a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
-  color: #ffffff;
-  border-radius: 0;
-  transition: all 0.3s;
-}
-
-.arrival_section a:hover {
-  background-color: transparent;
-  color: #f7444e;
-}
-
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 991px) {
-
-  .arrival_section .box {
-    min-height: 400px;
-    padding: 60px 30px;
-  }
-
-  .arrival_section .heading_container h2 {
-    font-size: 2.5rem;
-  }
-}
-
-/* =========================================
-   MOBILE
-   FOTO DI ATAS
-   KONTEN DI BAWAH
-========================================= */
-
-@media (max-width: 767px) {
-
-  .arrival_section {
-    padding: 0;
-  }
-
-  .arrival_section .container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  /* BOX MENJADI VERTIKAL */
-  .arrival_section .box {
-    min-height: auto;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: #ffffff;
-  }
-
-
-  /* =====================================
-       FOTO DI ATAS
-    ===================================== */
-
-  .arrival_section .arrival_bg_box {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    z-index: 1;
-  }
-
-  .arrival_section .arrival_bg_box img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    object-position: center;
-  }
-
-
-  /* =====================================
-       KONTEN DI BAWAH FOTO
-    ===================================== */
-
-  .arrival_section .box .row {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: block;
-    z-index: 2;
-  }
-
-  .arrival_section .box .row>div {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 30px 25px 35px;
-  }
-
-
-  /* =====================================
-       JUDUL
-    ===================================== */
-
-  .arrival_section .heading_container {
-    margin-bottom: 15px;
-    align-items: flex-start;
-  }
-
-  .arrival_section .heading_container h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 0;
-  }
-
-
-  /* =====================================
-       DESKRIPSI
-    ===================================== */
-
-  .arrival_section .box p {
-    margin-top: 15px !important;
-    margin-bottom: 20px !important;
-    font-size: 14px;
-    line-height: 1.7;
-  }
-}
-
-
-/* =========================================
-   HP KECIL
-========================================= */
-
-@media (max-width: 576px) {
-
-  .arrival_section .arrival_bg_box {
-    width: 100%;
-    height: auto;
-  }
-
-  .arrival_section .arrival_bg_box img {
-    width: 100%;
-    height: auto;
-
-    object-fit: contain;
-  }
-
-  .arrival_section .box .row>div {
-    padding: 25px 20px 30px;
-  }
-
-  .arrival_section .heading_container h2 {
-    font-size: 1.8rem;
-  }
-
-  .arrival_section .box p {
-    font-size: 14px;
-    line-height: 1.65;
-  }
-}
-
-
-.why_section .box {
-  text-align: center;
-  margin-top: 45px;
-  background-color: #ffce51;
-  padding: 45px 50px;
-  border-radius: 5px;
-  color: #ffffff;
-}
-
-.detail-box h5 {
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.remove_line_bt h2::after {
-  display: none;
-}
-
-/* =========================================
-   TENTANG KAMI
-========================================= */
-
-.why_section {
-  background: #ffffff;
-  padding: 70px 0;
-}
-
-
-/* =========================================
-   HEADING TENTANG KAMI
-   Mengikuti ukuran heading Paket Layanan
-========================================= */
-
-.why_section .heading_container {
-  margin-bottom: 45px;
-}
-
-.why_section .heading_container h2 {
-  position: relative;
-  margin-bottom: 0;
-  font-weight: bold;
-  color: #222222;
-  line-height: 1.2;
-}
-
-/* =========================================
-   WARNA "KAMI"
-========================================= */
-
-.why_section .heading_container h2 span {
-  color: #cd0909;
-  position: relative;
-  display: inline-block;
-}
-
-.why_section .heading_container h2::after {
-  display: none;
-}
-
-
-/* =========================================
-   GARIS HANYA DI BAWAH "KAMI"
-========================================= */
-
-.why_section .heading_container h2 span::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 5px;
-  background: #cd0909;
-  margin: 10px auto 10px;
-}
-
-
-/* =========================================
-   DESKRIPSI TENTANG KAMI
-========================================= */
-
-.why_section .heading_container p {
-  max-width: 650px;
-  margin: 10px auto 0;
-  color: #777777;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-
-/* =========================================
-   CARD TENTANG KAMI
-========================================= */
-
-.about_card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 40px 30px;
-  text-align: center;
-  background: #ffffff;
-  border-radius: 20px;
-  border: 1px solid #eeeeee;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-  overflow: hidden;
-}
-
-
-/* =========================================
-   GARIS MERAH DI ATAS CARD
-========================================= */
-
-.about_card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 4px;
-  background: #f7444e;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
-}
-
-
-/* =========================================
-   HOVER CARD
-========================================= */
-
-.about_card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
-  border-color: #f7444e;
-}
-
-
-/* =========================================
-   HOVER GARIS CARD
-========================================= */
-
-.about_card:hover::before {
-  width: 100%;
-}
-
-
-/* =========================================
-   ICON
-========================================= */
-
-.about_icon {
-  width: 85px;
-  height: 85px;
-  margin: 0 auto 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #fff1f2;
-  color: #f7444e;
-  font-size: 34px;
-  transition: all 0.3s ease;
-}
-
-
-/* =========================================
-   HOVER ICON
-========================================= */
-
-.about_card:hover .about_icon {
-  background: #f7444e;
-  color: #ffffff;
-  transform: scale(1.08) rotate(3deg);
-}
-
-
-/* =========================================
-   JUDUL CARD
-========================================= */
-
-.about_content h5 {
-  font-size: 21px;
-  font-weight: 700;
-  color: #222222;
-  margin-bottom: 15px;
-}
-
-
-/* =========================================
-   DESKRIPSI CARD
-========================================= */
-
-.about_content p {
-  margin: 0;
-  color: #777777;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-
-/* =========================================
-   RESPONSIVE TABLET
-========================================= */
-
-@media (max-width: 991px) {
-
-  .about_card {
-    padding: 35px 20px;
-  }
-
-}
-
-
-/* =========================================
-   RESPONSIVE MOBILE
-========================================= */
-
-@media (max-width: 767px) {
-
-  .why_section {
-    padding: 60px 0;
-  }
-
-  .why_section .heading_container {
-    margin-bottom: 30px;
-  }
-
-  .about_card {
-    margin-bottom: 20px;
-  }
-
-}
-
-
-/* =========================================
-   RESPONSIVE HP KECIL
-========================================= */
-
-@media (max-width: 576px) {
-
-  .why_section {
-    padding: 50px 0;
-  }
-
-  .why_section .heading_container {
-    margin-bottom: 25px;
-  }
-
-  .about_card {
-    padding: 30px 20px;
-  }
-
-  .about_icon {
-    width: 75px;
-    height: 75px;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-
-  .about_content h5 {
-    font-size: 19px;
-  }
-
-  .about_content p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-}
 
 /* =========================================
    GALLERY
@@ -1828,9 +1697,7 @@ a:focus {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
 
-/* =========================
-   RESPONSIVE GALLERY
-   ========================= */
+/* RESPONSIVE GALLERY */
 
 /* Tablet */
 @media (max-width: 991px) {
@@ -1898,15 +1765,11 @@ a:focus {
   width: 520px !important;
   max-width: 90% !important;
   height: 280px !important;
-
   margin: 0 auto !important;
   padding: 0 !important;
-
   overflow: hidden !important;
-
   /* INI YANG MEMBUAT PERSEGI PANJANG */
   border-radius: 10px !important;
-
   background: transparent !important;
 }
 
@@ -1933,10 +1796,7 @@ a:focus {
   border-radius: 10px !important;
 }
 
-
-/* =========================================
-   DETAIL / TEKS
-========================================= */
+/* DETAIL / TEKS */
 
 #carouselExample3Controls .detail-box {
   text-align: center !important;
@@ -1963,9 +1823,7 @@ a:focus {
 }
 
 
-/* =========================================
-   TOMBOL KIRI & KANAN
-========================================= */
+/* TOMBOL KIRI & KANAN */
 
 #carouselExample3Controls .carousel-control-prev,
 #carouselExample3Controls .carousel-control-next {
@@ -1978,23 +1836,17 @@ a:focus {
   opacity: 1 !important;
 }
 
-
 /* Tombol kiri */
 #carouselExample3Controls .carousel-control-prev {
   left: 12% !important;
 }
-
 
 /* Tombol kanan */
 #carouselExample3Controls .carousel-control-next {
   right: 12% !important;
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
-
+/* MOBILE*/
 @media (max-width: 767px) {
 
   #carouselExample3Controls .img-box {
@@ -2042,87 +1894,6 @@ a:focus {
 
 }
 
-.subscribe_section {
-  text-align: center;
-}
-
-.subscribe_section .box {
-  background-color: #d4ced0;
-  padding: 75px 45px;
-}
-
-.subscribe_section .subscribe_form .heading_container {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #002c3e;
-}
-
-.subscribe_section .subscribe_form .heading_container h2 {
-  padding: 0 25px;
-}
-
-.subscribe_section .subscribe_form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.subscribe_section .subscribe_form form input {
-  width: 100%;
-  height: 60px;
-  border: none;
-  border-radius: 90px;
-  outline: none;
-  padding: 5px 25px;
-  background-color: #ffffff;
-  margin-top: 15px;
-  text-align: left;
-}
-
-.subscribe_section .subscribe_form form input::-webkit-input-placeholder {
-  color: #171620;
-}
-
-.subscribe_section .subscribe_form form input:-ms-input-placeholder {
-  color: #171620;
-}
-
-.subscribe_section .subscribe_form form input::-ms-input-placeholder {
-  color: #171620;
-}
-
-.subscribe_section .subscribe_form form input::placeholder {
-  color: #171620;
-}
-
-.subscribe_section .subscribe_form form button {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
-  color: #ffffff;
-  border-radius: 35px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-transform: uppercase;
-  margin-top: 35px;
-  font-weight: 600;
-  width: 100%;
-  max-width: 285px;
-}
-
-.subscribe_section .subscribe_form form button:hover {
-  background-color: transparent;
-  color: #f7444e;
-}
 
 .client_section .box {
   display: -webkit-box;
